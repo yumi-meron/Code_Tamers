@@ -6,7 +6,7 @@ int main() {
     string subject;
     int creditHrs, mark, test, project, assignment, finalExam, value, totalCredit, quiz;
     
-    cout << "enter your grade by entering each of the assesment mark: " <<"\n" <<" quiz(5%):  ";
+    cout << "enter your grade by listing each of the assesment mark: " <<"\n" <<" quiz(5%):  ";
     cin >> quiz;
     int i; 
     for (i = 1; i<=5 && (quiz>5 || quiz<0); i++) {

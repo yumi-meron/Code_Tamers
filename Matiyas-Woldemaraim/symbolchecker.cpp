@@ -13,8 +13,8 @@ int main() {
     }
     else if(x >= '0' && x <= '9') {
         (x % 2 == 0) ? 
-        cout <<"The symbol "<< x << "is even num.":
-        cout << "odd num.";
+        cout <<"The symbol "<< x << "is even number.":
+        cout << "The symbol " << x << " is odd number.";
     }
     else {
         cout << "the symbol " << x << " is special character";

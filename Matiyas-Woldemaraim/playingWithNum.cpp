@@ -20,7 +20,7 @@ int main() {
             }
             cout << endl;
 
-            break;
+        break;
         case 2:
             cout << "enter any number to be counted: ";
             cin >> digit;
@@ -31,7 +31,7 @@ int main() {
             }
             cout << "the total number of digits are: " <<total;
 
-            break;
+        break;
         case 3:
             cout << "Enter a number to its digits to be added: ";
             cin >> digit;
@@ -42,7 +42,7 @@ int main() {
             }
             cout << "The sum of the digits is= " <<sum <<endl;
             
-            break;
+        break;
         case 4:
             cout << "enter a number to get the product of its even digits: ";
             cin >> digit;

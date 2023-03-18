@@ -53,6 +53,16 @@ int main() {
     case 'e':
         cout << "enter the number of rows you want: ";
         cin >> n;
+        for(int i=n; i>=1;i--) {
+            for(int k=n-i; k>0; k--) 
+                cout << " ";
+            for(int j=i; j>0; j--)
+                if(i==1 || i==n || j==i || j==n || j==1)
+                    cout << "*";
+                else
+                    cout << " ";
+            cout << endl;
+        }
 
     break;
     case 'f':

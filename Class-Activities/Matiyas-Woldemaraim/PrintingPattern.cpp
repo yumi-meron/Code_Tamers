@@ -4,7 +4,7 @@ using namespace std;
 int main() {
   char choice;
   int n;
-  cout << "THIS IS A PRITING PATTERNS: \na. rectangle \nb. hollow rectangle \nc. Half Pyramid \nd. Inverted Half Pyramid \ne.Hollow Inverted Half Pyramid \nf. full Pyramid: " <<endl;
+  cout << "THIS IS A PRITING PATTERNS: \na. Rectangle \nb. Hollow Rectangle \nc. Half Pyramid \nd. Inverted Half Pyramid \ne.Hollow Inverted Half Pyramid \nf. Full Pyramid \ng. Inverted Full Pyramid \nh. Hollow Pyramid \ni. Inverted Hollow Pyramid: " <<endl;
   cin >> choice;
   switch(choice) {
     case 'a':
@@ -68,10 +68,59 @@ int main() {
     case 'f':
         cout << "enter the number of rows you want: ";
         cin >> n;
-
+        for(int i=1; i<=n;i++) {
+            for(int k=n-i;k>0;k--) 
+                cout << " ";
+            for(int j=1; j<=i; j++) {
+                cout << "* ";
+            }
+            cout << endl;
+        }
+    break;
+    case 'g':
+        cout << "enter the row size of inverted pyramid you want: ";
+        cin >> n;
+        for(int i=n; i>=1;i--) {
+            for(int k=n-i;k>0;k--) 
+                cout << " ";
+            for(int j=1; j<=i; j++) {
+                cout << "* ";
+            }
+            cout << endl;
+        }
+    break;
+    case 'h':
+        cout << "enter the row size of hollow pyramid you want: ";
+        cin >> n;
+        for(int i=1; i<=n;i++) {
+            for(int k=n-i;k>0;k--) 
+                cout << " ";
+            for(int j=1; j<=i; j++) {
+                if(i==1 || i==n || i==j || j==1 || j==n)
+                    cout << "* ";
+                else    
+                    cout << "  ";
+            }
+            cout << endl;
+        }
+    break;
+    case 'i':
+        cout << "enter the row size of inverted hollow pyramid you want: ";
+        cin >> n;
+        for(int i=n; i>=1;i--) {
+            for(int k=n-i;k>0;k--) 
+                cout << " ";
+            for(int j=1; j<=i; j++) {
+                if(i==1 || i==n || i==j || j==1 || j==n)
+                    cout << "* ";
+                else    
+                    cout << "  ";
+            }
+            cout << endl;
 
     
  
 }
+return 0;
 }
  

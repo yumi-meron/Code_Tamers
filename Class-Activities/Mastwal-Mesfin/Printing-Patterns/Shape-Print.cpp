@@ -17,10 +17,28 @@ int main()
             cout<<endl;
         }
     break;
-    // case 2:
-    //     for(in; ; ;)
-    //     {}
-    // break;
+    case 2:
+    int Colm,Row;
+    cout<<"Enter Row dimension: ";
+    cin>>Row;
+    cout<<"Enter Colm dimension: ";
+    cin>>Colm;
+    for(int i=1;i<=Row;i++)
+    {
+        for(int k=1;k<=Colm;k++)
+        {
+            if(i==1||i==Row||k==1||k==Colm)
+            {
+                cout<<"*";
+            }
+            else
+            {
+                cout<<" ";
+            }
+        }
+        cout<<"\n";
+    }
+    break;
     case 3:
         for(int Row=0;Row<5;Row++)
         {

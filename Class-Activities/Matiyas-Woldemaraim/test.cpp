@@ -3,58 +3,58 @@
 using namespace std;
 
 int main() {
-    float h, i, j, pt, tot, GPA;
-    char e, f, g;
+    float crh1, crh2, crh3, grade_pt, total_cr, GPA;
+    char grade1, grade2, grade3;
 
     cout << "enter the credit hour of the three courses: "<<endl;
-    cin >> h >> i>>j;
+    cin >> crh1>> crh2 >>crh3;
     cout << "enter the grade of the three courses: "<<endl;
-    cin >> e>>f>>g;
-    switch(e) {
+    cin >> grade1>>grade2>>grade3;
+    switch(grade1) {
         case 'A':
-            e=4;
+            grade1=4;
         break;
         case 'B':
-            e=3;
+            grade1=3;
         break;
         case 'C':
-            e=2;
+            grade1=2;
         break;
         case 'D':
-            e=1;
+            grade1=1;
         break;
     }
-    switch(f) {
+    switch(grade2) {
         case 'A':
-            f=4;
+            grade2=4;
         break;
         case 'B':
-            f=3;
+            grade2=3;
         break;
         case 'C':
-            f=2;
+            grade2=2;
         break;
         case 'D':
-            f=1;
+            grade2=1;
         break;
     }
-    switch(g) {
+    switch(grade3) {
         case 'A':
-            g=4;
+            grade3=4;
         break;
         case 'B':
-            g=3;
+            grade3=3;
         break;
         case 'C':
-            g=2;
+            grade3=2;
         break;
         case 'D':
-            g=1;
+            grade3=1;
         break;
     }
-    pt = (h*e) + (i*f) + (j*g);
-    tot = i+j+h;
-    GPA = pt/tot;
+    grade_pt = (crh1*grade1) + (crh2*grade2) + (crh3*grade3);
+    total_cr = crh1+crh2+crh3;
+    GPA = grade_pt/total_cr;
     cout << "your gpa is "<<GPA<<endl;
 
     if(GPA >= 3.5 && GPA <=4)

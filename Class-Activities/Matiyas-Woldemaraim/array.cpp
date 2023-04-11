@@ -4,6 +4,7 @@
 using namespace std;
 
 int main() {
+    //a program that store the ascii code and print out the the alphabet in upper and lowe case
     int upper[26];
     int n = 65;
     for(int k=0; k<26; k++) {
@@ -28,7 +29,7 @@ int main() {
     }
     cout << endl;
 
-    //declare a 2d array
+    //declare and initialize a 2d array
     int array1[5][6] = {{1,2,2,3,4,5}, {2,2,4,6,9,7}, {1,4,5,2,3,6}};
     for(int i=0;i<5;i++) {
         for(int j=0;j<6;j++)
@@ -36,6 +37,7 @@ int main() {
          cout << endl;
     }
     
+    //a string declaration and initialization
     string name = "matiyas", lname= "wolde";
     int age=20;
     cout << name +" "+ lname + " and age " << age<<endl;

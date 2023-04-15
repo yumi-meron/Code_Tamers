@@ -21,6 +21,10 @@ int main()
         Loan=Loan-Over_Inter;
         Inter=(Inter_Rate*Loan)/12;
 //Data input part
-        
+        for(int i=0;;i++)
+        {
+            Array_Inter=to_string(Inter);
+            break;
+        }
     }
     while(Loan>=0)

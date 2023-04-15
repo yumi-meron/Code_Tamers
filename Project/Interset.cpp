@@ -32,5 +32,6 @@ int main()
             cout<<Payment<<"\t";
             break;
         } while (Loan>=0);
+    
     }
     while(Loan>=0)

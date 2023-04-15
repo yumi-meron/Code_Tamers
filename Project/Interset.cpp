@@ -26,5 +26,11 @@ int main()
             Array_Inter=to_string(Inter);
             break;
         }
+//The printing of the table
+        do
+        {
+            cout<<Payment<<"\t";
+            break;
+        } while (Loan>=0);
     }
     while(Loan>=0)

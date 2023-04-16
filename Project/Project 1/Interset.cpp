@@ -42,6 +42,6 @@ int main()
     while(Loan>=0)
         do
         {
-            cout<<Array_Inter;
+            cout<<Array_Inter<<"\t";
             break;
         } while (Loan>=0);

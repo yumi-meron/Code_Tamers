@@ -23,4 +23,18 @@ int main()
         cin >> amount;
         // Update sales array
         sales[salesperson - 1][product - 1] += amount;
+        
     }
+     // Print row cross totals
+     for (int product = 1; product <= NUM_PRODUCTS; product++) {
+        double product_total=0;
+        for (int salesperson = 1; salesperson <= NUM_SALESPERSONS; salesperson++) {
+            product_total += sales[salesperson - 1][product - 1];
+        }
+        cout << product_total<<"\t\t";
+    }
+    cout << grand_total << endl;
+    cout<<"--------------------------------------------------------------------------------------------------\n";
+    }
+    
+

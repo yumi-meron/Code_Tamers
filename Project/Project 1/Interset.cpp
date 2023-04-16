@@ -29,7 +29,7 @@ int main()
         for(int i=0;;i++)
         {
             Array_Loan=to_string(Loan);
-            
+            break;
         }
 //The printing of the table
         do

@@ -13,4 +13,5 @@ int main()
         }
         for(int k=m-i;k>0;k--){
             cout << " ";
+        }
 }

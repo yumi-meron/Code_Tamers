@@ -26,6 +26,7 @@ int main()
         
     }
      // Print row cross totals
+    cout << "Total"<<"\t\t";
      for (int product = 1; product <= NUM_PRODUCTS; product++) {
         double product_total=0;
         for (int salesperson = 1; salesperson <= NUM_SALESPERSONS; salesperson++) {

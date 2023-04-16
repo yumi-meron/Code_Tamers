@@ -13,20 +13,27 @@ int main() {
 
         int right = strcmp(usrName, usr);
         if(right==0) {
-            int correct = strcmp(password, pass);
-            if(correct==0)
-                printf("you signed in successfully.");
+            if(strlen(pass)>=6 && strlen(pass)<=15) {
+                int correct = strcmp(password, pass);
+                if(correct==0)
+                    printf("you signed in successfully.");
+                else
+                    printf("you inserted wrong password!");
+            }
             else
-                printf("you inserted wrong password!");
-            return 0;
+               printf("your password length should be between 6 to 15 characters");
         }
+        
         else {
-            int correct = strcmp(password, pass);
-            if(correct==0)
-                printf("check your user name again!");
-            else
-                printf("you inserted wrong password and user name!");
-            return 0;
+            if(strlen(pass)>=6 && strlen(pass)<=15) {
+                int correct = strcmp(password, pass);
+                if(correct==0)
+                    printf("check your user name again!");
+                else
+                    printf("you inserted wrong password and user name!");
+            }
+            else 
+                printf("your password length should be between 6 to 15 characters");
         }
-
+        return 0;
 }

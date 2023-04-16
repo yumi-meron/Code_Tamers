@@ -17,7 +17,21 @@ int main()
     Payment=Original_Loan/20;
     cout<<"Payment"<<"\t"<<"Loan"<<"\t\t"<<"Interest"<<"\t"<<"Annual(in %)";
     do
-    {
-
+    {        
+        Loan=Loan-Over_Inter;
+        Inter=(Inter_Rate*Loan)/12;
+//Data input part
+        for(int i=0;;i++)
+        {
+            Array_Inter=to_string(Inter);
+            break;
+        }
+//The printing of the table
+        do
+        {
+            cout<<Payment<<"\t";
+            break;
+        } while (Loan>=0);
+    
     }
     while(Loan>=0)

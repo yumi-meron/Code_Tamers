@@ -26,6 +26,11 @@ int main()
             Array_Inter=to_string(Inter);
             break;
         }
+        for(int i=0;;i++)
+        {
+            Array_Loan=to_string(Loan);
+            break;
+        }
 //The printing of the table
         do
         {
@@ -35,3 +40,8 @@ int main()
     
     }
     while(Loan>=0)
+        do
+        {
+            cout<<Array_Inter<<"\t";
+            break;
+        } while (Loan>=0);

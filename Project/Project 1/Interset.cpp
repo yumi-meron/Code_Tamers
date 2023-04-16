@@ -26,6 +26,11 @@ int main()
             Array_Inter=to_string(Inter);
             break;
         }
+        for(int i=0;;i++)
+        {
+            Array_Loan=to_string(Loan);
+            
+        }
 //The printing of the table
         do
         {

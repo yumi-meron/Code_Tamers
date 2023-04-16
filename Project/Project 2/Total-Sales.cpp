@@ -23,4 +23,6 @@ int main()
         cin >> amount;
         // Update sales array
         sales[salesperson - 1][product - 1] += amount;
+        
     }
+     // Print row cross totals

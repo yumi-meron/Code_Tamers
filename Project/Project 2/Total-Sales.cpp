@@ -37,5 +37,12 @@ int main()
     cout << grand_total << endl;
     cout<<"--------------------------------------------------------------------------------------------------\n";
     }
+    else if (s_p=='y' || s_p=='Y'){
+        cout<<"which salesperson would you like to know about?\n";
+        cout << "Enter salesperson number (1 to 4): ";
+
+
+    
+
     
 

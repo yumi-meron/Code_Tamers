@@ -85,6 +85,7 @@ int main()
             sp_total=sales[0][product-1]+sales[1][product-1]+sales[2][product-1]+sales[3][product-1]+sales[4][product-1];
             cout<<"total amount of product "<<product<<" sold= "<<sp_total<<"ETB";
             cout<<"\n_ _ _";
+        }
         else if (s_p=='y' || s_p=='Y'){
             cout<<"which salesperson would you like to know about?\n";
             cout << "Enter salesperson number (1 to 4): ";

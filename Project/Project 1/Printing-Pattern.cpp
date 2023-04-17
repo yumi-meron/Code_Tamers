@@ -6,7 +6,7 @@ int main()
 //Setting triangle range to 0-9
     for(int i=0; i<10;i++) 
     {
-//Code fo the outer spacing
+//Code for the outer spacing
         for(int k=n-i;k<10;++k) 
         {
             cout << " ";
@@ -14,4 +14,18 @@ int main()
         for(int k=m-i;k>0;k--){
             cout << " ";
         }
+//Code for the increasing print
+        for(int j=i;j>=0;j--) 
+        { 
+            cout << j;
+            if(j==0) 
+            {
+                for(int l=1;l<=i;l++) 
+                { 
+                    cout << l;
+                }
+            }
+        }
+        cout << endl;
+    }
 }

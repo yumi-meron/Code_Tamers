@@ -16,5 +16,10 @@ int main()
         }
 //Code for the increasing print
         for(int j=i;j>=0;j--) 
-        {  
+        { 
+            cout << j;
+            if(j==0) 
+            {
+                for(int l=1;l<=i;l++) 
+                {
 }

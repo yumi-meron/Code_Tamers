@@ -46,7 +46,10 @@ int main()
         for(product=1;product<=NUM_PRODUCTS;product++){
             double pn=sales[salesperson-1][product-1];//pn is product number
             cout<<"product "<<product<<" total="<<pn<<"ETB"<<endl;
-
+        }
+        double pn_total=sales[salesperson-1][0]+sales[salesperson-1][1]+sales[salesperson-1][2]+sales[salesperson-1][3]+sales[salesperson-1][4];
+        cout<<"total value of product sold by salesperson"<<salesperson<<"= "<<pn_total<<"ETB\n";
+        double bonus = 0.05*pn_total;
     
 
     

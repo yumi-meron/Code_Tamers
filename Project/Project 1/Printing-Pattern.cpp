@@ -21,5 +21,9 @@ int main()
             if(j==0) 
             {
                 for(int l=1;l<=i;l++) 
-                {
+                { 
+                    cout << l;
+                }
+            }
+        }
 }

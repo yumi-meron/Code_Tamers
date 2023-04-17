@@ -33,39 +33,58 @@ int main()
     cout<<endl;
     if(c_d=='a'||c_d=='A'){
         // Print sales table with cross totals and bonus payments
-    cout<<"-------------------------------------------------------------------------------------------------\n";
-    cout << "Salesperson"<<"\t";
-    for (int product = 1; product <= NUM_PRODUCTS; product++) {
-        cout << "Product " << product<<"\t";
-    }
-    cout << "Total"<<"\t\t" << "Bonus" << endl;
-    double grand_total = 0;
-    for (int salesperson = 1; salesperson <= NUM_SALESPERSONS; salesperson++) {
-        cout << salesperson <<"\t\t";
-        double salesperson_total = 0;
+        cout<<"-------------------------------------------------------------------------------------------------\n";
+        cout << "Salesperson"<<"\t";
         for (int product = 1; product <= NUM_PRODUCTS; product++) {
-            sales_amount = sales[salesperson - 1][product - 1];
-            cout << sales_amount<<"\t\t";
-            salesperson_total += sales_amount;
+            cout << "Product " << product<<"\t";
         }
-        cout << salesperson_total<<"\t\t";
-        bonus = 0.05 * salesperson_total;
-        cout << bonus << endl;
-        grand_total += salesperson_total;
-    }
-
-     // Print row cross totals
-    cout << "Total"<<"\t\t";
-     for (int product = 1; product <= NUM_PRODUCTS; product++) {
-        double product_total=0;
+        cout << "Total"<<"\t\t" << "Bonus" << endl;
+        double grand_total = 0;
         for (int salesperson = 1; salesperson <= NUM_SALESPERSONS; salesperson++) {
-            product_total += sales[salesperson - 1][product - 1];
+            cout << salesperson <<"\t\t";
+            double salesperson_total = 0;
+            for (int product = 1; product <= NUM_PRODUCTS; product++) {
+                sales_amount = sales[salesperson - 1][product - 1];
+                cout << sales_amount<<"\t\t";
+                salesperson_total += sales_amount;
+            }
+            cout << salesperson_total<<"\t\t";
+            bonus = 0.05 * salesperson_total;
+            cout << bonus << endl;
+            grand_total += salesperson_total;
         }
-        cout << product_total<<"\t\t";
+
+         // Print row cross totals
+        cout << "Total"<<"\t\t";
+         for (int product = 1; product <= NUM_PRODUCTS; product++) {
+            double product_total=0;
+            for (int salesperson = 1; salesperson <= NUM_SALESPERSONS; salesperson++) {
+                product_total += sales[salesperson - 1][product - 1];
+            }
+            cout << product_total<<"\t\t";
+        }
+        cout << grand_total << endl;
+        cout<<"--------------------------------------------------------------------------------------------------\n";
     }
-    cout << grand_total << endl;
-    cout<<"--------------------------------------------------------------------------------------------------\n";
-    }
+    else if(c_d=='b'|| c_d=='B'){
+        cout<<"enter \'x\' or \'X\' if you want to know about a particular product.\nor\n";
+        cout<<"enter \'y\' or \'Y\' if you want to know about a particular sales person.\n-->";
+        char s_p;//s_p is salesperson or product
+        cin>>s_p;
+        if (s_p=='x' || s_p=='X'){
+            cout<<"which product would you like to know about?\n";
+            cout << "Enter product number (1 to 5): ";
+            cin >> product;
+            cout<<"_ _ _\n\n";
+            cout<<"the details for product"<<product<<" are:";
+            for(salesperson=1;salesperson<=NUM_SALESPERSONS;salesperson++){
+                double sp=sales[salesperson-1][product-1];//sp is each salesperson's value of the product sold
+                cout<<"sales person "<<salesperson<<" total="<<sp<<"ETB"<<endl;
+            }
+            double sp_total=0;
+            sp_total=sales[0][product-1]+sales[1][product-1]+sales[2][product-1]+sales[3][product-1]+sales[4][product-1];
+            cout<<"total amount of product "<<product<<" sold= "<<sp_total<<"ETB";
+            cout<<"\n_ _ _";
         else if (s_p=='y' || s_p=='Y'){
             cout<<"which salesperson would you like to know about?\n";
             cout << "Enter salesperson number (1 to 4): ";

@@ -40,7 +40,10 @@ int main()
     else if (s_p=='y' || s_p=='Y'){
         cout<<"which salesperson would you like to know about?\n";
         cout << "Enter salesperson number (1 to 4): ";
-
+        cin >> salesperson;
+        cout<<"_ _ _\n\n";
+        cout<<"salesperson "<<salesperson<<"got the following amount from each product:\n";
+        for(product=1;product<=NUM_PRODUCTS;product++){
 
     
 

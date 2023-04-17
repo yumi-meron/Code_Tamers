@@ -3,6 +3,10 @@ using namespace std;
 int main() 
 {
     int n=10;
+    //Part 2 of the print
+    int m=9;
+ for(int i=1;i<=m;i++){
+
 //Setting triangle range to 0-9
     for(int i=0; i<10;i++) 
     {
@@ -14,6 +18,7 @@ int main()
         for(int k=m-i;k>0;k--){
             cout << " ";
         }
+    }
 //Code for the increasing print
         for(int j=i;j>=0;j--) 
         { 

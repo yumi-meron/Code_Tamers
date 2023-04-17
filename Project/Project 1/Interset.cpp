@@ -15,6 +15,20 @@ int main()
     cin>>Loan;
     Original_Loan=Loan;
     Payment=Original_Loan/20;
+   //To make Interset rate work both in dec and per
+    if(Inter_Rate>=1)
+    {
+        Inter_Rate=Inter_Rate/100;
+    }
+    else if(Inter_Rate<1 && Inter_Rate>0)
+    {
+        Inter_Rate=Inter_Rate;
+    }
+    else
+    {
+        cout<<"Enter a proper interset rate";
+        exit(0);
+    }
     cout<<"Payment"<<"\t"<<"Loan"<<"\t\t"<<"Interest"<<"\t"<<"Annual(in %)";
     do
     {        
@@ -70,9 +84,10 @@ int main()
         }
         do
         {
-            cout<<Array_Anual<<"%"<<"/t";
+            cout<<Array_Anual<<"%"<<"\t";
             break;
         } while (Loan>=0);
     }
-    while(Loan>=0)
+    while(Loan>=0);
+}
         

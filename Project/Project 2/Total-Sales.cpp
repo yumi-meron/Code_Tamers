@@ -44,6 +44,8 @@ int main()
         cout<<"_ _ _\n\n";
         cout<<"salesperson "<<salesperson<<"got the following amount from each product:\n";
         for(product=1;product<=NUM_PRODUCTS;product++){
+            double pn=sales[salesperson-1][product-1];//pn is product number
+            cout<<"product "<<product<<" total="<<pn<<"ETB"<<endl;
 
     
 

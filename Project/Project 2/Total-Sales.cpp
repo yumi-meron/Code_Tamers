@@ -25,6 +25,35 @@ int main()
         sales[salesperson - 1][product - 1] += amount;
         
     }
+        cout<<",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,\n";
+    cout<<"enter \'a\' or \'A\' if you want a summary table.\nor\n ";
+    cout<<"enter \'b\' or \'B\' if you want to search for a particular product or salesperson record.\n";
+    cout<<",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,\n-->";
+    cin>>c_d;
+    cout<<endl;
+    if(c_d=='a'||c_d=='A'){
+        // Print sales table with cross totals and bonus payments
+    cout<<"-------------------------------------------------------------------------------------------------\n";
+    cout << "Salesperson"<<"\t";
+    for (int product = 1; product <= NUM_PRODUCTS; product++) {
+        cout << "Product " << product<<"\t";
+    }
+    cout << "Total"<<"\t\t" << "Bonus" << endl;
+    double grand_total = 0;
+    for (int salesperson = 1; salesperson <= NUM_SALESPERSONS; salesperson++) {
+        cout << salesperson <<"\t\t";
+        double salesperson_total = 0;
+        for (int product = 1; product <= NUM_PRODUCTS; product++) {
+            sales_amount = sales[salesperson - 1][product - 1];
+            cout << sales_amount<<"\t\t";
+            salesperson_total += sales_amount;
+        }
+        cout << salesperson_total<<"\t\t";
+        bonus = 0.05 * salesperson_total;
+        cout << bonus << endl;
+        grand_total += salesperson_total;
+    }
+
      // Print row cross totals
     cout << "Total"<<"\t\t";
      for (int product = 1; product <= NUM_PRODUCTS; product++) {

@@ -70,9 +70,10 @@ int main()
         }
         do
         {
-            cout<<Array_Anual<<"%"<<"/t";
+            cout<<Array_Anual<<"%"<<"\t";
             break;
         } while (Loan>=0);
     }
-    while(Loan>=0)
+    while(Loan>=0);
+}
         

@@ -20,17 +20,27 @@ int main()
     {        
         Loan=Loan-Over_Inter;
         Inter=(Inter_Rate*Loan)/12;
-//Data input part
-        for(int i=0;;i++)
+
+//To the Data input part
+         for(int i=0;;i++)
         {
             Array_Inter=to_string(Inter);
             break;
         }
+        Anual_Per=(Inter*10000)/Original_Loan;
+        for(int i=0;;i++)
+        {
+            Array_Anual=to_string(Anual_Per);
+            break;
+        }
+        Over_Inter=Payment-Inter;
         for(int i=0;;i++)
         {
             Array_Loan=to_string(Loan);
             break;
         }
+        cout<<endl;
+
 //The printing of the table
         do
         {
@@ -45,3 +55,19 @@ int main()
             cout<<Array_Inter<<"\t";
             break;
         } while (Loan>=0);
+    do
+        {
+            cout<<Array_Loan<<"\t";
+            break;
+        } while (Loan>=0);
+
+        for(int i=0;;i++)
+        {
+            Array_Inter=to_string(Inter);
+            break;
+        }
+        for(int i=0;;i++)
+        {
+            Array_Loan=to_string(Loan);
+            break;
+        }

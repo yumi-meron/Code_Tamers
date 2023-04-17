@@ -6,7 +6,7 @@ int main()
 //Setting triangle range to 0-9
     for(int i=0; i<10;i++) 
     {
-//Code fo the outer spacing
+//Code for the outer spacing
         for(int k=n-i;k<10;++k) 
         {
             cout << " ";
@@ -26,4 +26,6 @@ int main()
                 }
             }
         }
+        cout << endl;
+    }
 }

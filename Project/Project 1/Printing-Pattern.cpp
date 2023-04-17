@@ -11,7 +11,7 @@ int main()
         {
             cout << " ";
         }
-        for(int j=9-i;i>=0;j--) 
+        for(int j=9-i;j>=0;j--) 
         {
             cout << j;
 //print numbers onward zero

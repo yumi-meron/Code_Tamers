@@ -14,4 +14,7 @@ int main()
         for(int k=m-i;k>0;k--){
             cout << " ";
         }
+//Code for the increasing print
+        for(int j=i;j>=0;j--) 
+        {  
 }

@@ -47,15 +47,12 @@ int main()
             cout<<Payment<<"\t";
             break;
         } while (Loan>=0);
-    
-    }
-    while(Loan>=0)
         do
         {
             cout<<Array_Inter<<"\t";
             break;
         } while (Loan>=0);
-    do
+        do
         {
             cout<<Array_Loan<<"\t";
             break;
@@ -71,3 +68,11 @@ int main()
             Array_Loan=to_string(Loan);
             break;
         }
+        do
+        {
+            cout<<Array_Anual<<"%"<<"/t";
+            break;
+        } while (Loan>=0);
+    }
+    while(Loan>=0)
+        

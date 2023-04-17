@@ -37,20 +37,24 @@ int main()
     cout << grand_total << endl;
     cout<<"--------------------------------------------------------------------------------------------------\n";
     }
-    else if (s_p=='y' || s_p=='Y'){
-        cout<<"which salesperson would you like to know about?\n";
-        cout << "Enter salesperson number (1 to 4): ";
-        cin >> salesperson;
-        cout<<"_ _ _\n\n";
-        cout<<"salesperson "<<salesperson<<"got the following amount from each product:\n";
-        for(product=1;product<=NUM_PRODUCTS;product++){
-            double pn=sales[salesperson-1][product-1];//pn is product number
-            cout<<"product "<<product<<" total="<<pn<<"ETB"<<endl;
+        else if (s_p=='y' || s_p=='Y'){
+            cout<<"which salesperson would you like to know about?\n";
+            cout << "Enter salesperson number (1 to 4): ";
+            cin >> salesperson;
+            cout<<"_ _ _\n\n";
+            cout<<"salesperson "<<salesperson<<"got the following amount from each product:\n";
+            for(product=1;product<=NUM_PRODUCTS;product++){
+                double pn=sales[salesperson-1][product-1];//pn is product number
+                cout<<"product "<<product<<" total="<<pn<<"ETB"<<endl;
+            }
+            double pn_total=sales[salesperson-1][0]+sales[salesperson-1][1]+sales[salesperson-1][2]+sales[salesperson-1][3]+sales[salesperson-1][4];
+            cout<<"total value of product sold by salesperson"<<salesperson<<"= "<<pn_total<<"ETB\n";
+            double bonus = 0.05*pn_total;
+            cout<<"salesperson"<<salesperson<<" got a bonus of: "<<bonus;
+            cout<<"\n_ _ _";
         }
-        double pn_total=sales[salesperson-1][0]+sales[salesperson-1][1]+sales[salesperson-1][2]+sales[salesperson-1][3]+sales[salesperson-1][4];
-        cout<<"total value of product sold by salesperson"<<salesperson<<"= "<<pn_total<<"ETB\n";
-        double bonus = 0.05*pn_total;
-    
+    }
+}
 
     
 

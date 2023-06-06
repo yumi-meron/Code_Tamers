@@ -1,8 +1,9 @@
 #include<iostream>
+#include<string>
 
 using namespace std;
 
-bool yearLeap(int year);
+string yearLeap(int year);
 
 int main()
 {
@@ -12,16 +13,16 @@ int main()
     cout<<yearLeap(year);
 }
 
-bool yearLeap(int year)
+string yearLeap(int year)
 {
     int reT;
     reT=year%4;
     if(reT==0&&reT%100==0)
     {
-        return true;
+        return "It is a leap year";
     }
     else
     {
-        return false;
+        return "It is not a leap year";
     }
 }

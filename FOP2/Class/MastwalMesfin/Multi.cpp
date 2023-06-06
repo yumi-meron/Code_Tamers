@@ -2,19 +2,19 @@
 
 using namespace std;
 
-float mult(float a,float b);
+float mult();
 
 int main()
+{
+    cout<<mult();
+}
+
+float mult()
 {
     float a,b;
     cout<<"Enter a number "<<endl;
     cin>>a;
     cout<<"Enter a number "<<endl;
     cin>>b;
-    cout<<mult(a,b);
-}
-
-float mult(float a,float b)
-{
     return a*b;
 }

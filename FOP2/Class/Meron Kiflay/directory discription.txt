@@ -1,2 +1,0 @@
-Meron Kiflay
-class works

@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+int main ()
+{
+    float h,w;
+    
+    cout<<"enter height";
+    cin>>h;
+    cout<<"enter mass";
+    cin>>w;
+    Bmi = w/(h*h);
+    cout<<Bmi;
+}
